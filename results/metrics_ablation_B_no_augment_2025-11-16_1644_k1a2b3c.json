@@ -1,0 +1,12 @@
+{
+    "run_id": "2025-11-16_1644_k1a2b3c",
+    "model_name": "B_no_augment",
+    "commit_hash": "k1a2b3c",
+    "metrics": {
+        "val_accuracy": 0.7574999928474426,
+        "val_loss": 0.8591112494468689,
+        "test_accuracy": 0.7554000020027161,
+        "test_loss": 0.8714104294776917,
+        "epochs_run": 20
+    }
+}

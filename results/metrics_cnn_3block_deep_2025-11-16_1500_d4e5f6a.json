@@ -1,0 +1,12 @@
+{
+    "run_id": "2025-11-16_1500_d4e5f6a",
+    "model_name": "cnn_3block_deep",
+    "commit_hash": "d4e5f6a",
+    "metrics": {
+        "val_accuracy": 0.7684000134468079,
+        "val_loss": 0.7851624488830566,
+        "test_accuracy": 0.7660999894142151,
+        "test_loss": 0.8086473941802979,
+        "epochs_run": 30
+    }
+}

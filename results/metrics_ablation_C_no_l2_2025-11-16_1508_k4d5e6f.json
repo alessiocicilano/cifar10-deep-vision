@@ -1,0 +1,12 @@
+{
+    "run_id": "2025-11-16_1508_k4d5e6f",
+    "model_name": "C_no_l2",
+    "commit_hash": "k4d5e6f",
+    "metrics": {
+        "val_accuracy": 0.7720000147819519,
+        "val_loss": 0.6847835183143616,
+        "test_accuracy": 0.7651000022888184,
+        "test_loss": 0.7112323045730591,
+        "epochs_run": 30
+    }
+}

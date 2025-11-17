@@ -1,0 +1,21 @@
+
+# R3: Parámetros del Experimento (SGD + CosineDecay)
+run_id: 2025-11-16_1642_c1d2e3f
+seed: 42
+architecture: "CNN_3Block_Deep" # (La misma que H)
+total_params: 356810
+training:
+  optimizer: "SGD"
+  momentum: 0.9
+  lr_schedule: "CosineDecay"
+  initial_learning_rate: 0.05
+  batch_size: 64
+  epochs_requested: 30
+  epochs_run: 30
+regularization:
+  l2_weight_decay: 0.0001 # (Heredado de H)
+  dropout: 0.5 # (Heredado de H)
+  data_augmentation: true # (Heredado de H)
+  callbacks:
+    - EarlyStopping: (monitor=val_loss, patience=5)
+    - CosineDecay: (decay_steps=18750)

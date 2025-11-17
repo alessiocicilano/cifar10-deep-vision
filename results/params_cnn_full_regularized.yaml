@@ -1,0 +1,23 @@
+
+# R3: Parámetros del Experimento (CNN Full Regularized)
+run_id: 2025-11-16_1636_a1b2c3d
+seed: 42
+architecture:
+  type: "CNN_2Block_L2_Aug"
+  total_params: 545098
+training:
+  learning_rate_initial: 0.001
+  batch_size: 64
+  epochs_requested: 20
+  epochs_run: 18
+  optimizer: "adam"
+regularization:
+  l2_weight_decay: 0.0001
+  dropout: 0.5
+  data_augmentation:
+    flip: horizontal
+    rotation_factor: 0.03 # (10.8 grados)
+    zoom_factor: 0.1
+  callbacks:
+    - EarlyStopping: (monitor=val_loss, patience=5)
+    - ReduceLROnPlateau: (monitor=val_loss, patience=3, factor=0.2)

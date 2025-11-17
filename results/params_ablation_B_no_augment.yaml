@@ -1,0 +1,13 @@
+
+# R3: Parámetros (Ablación: B_no_augment)
+run_id: 2025-11-16_1644_k1a2b3c
+commit: k1a2b3c
+architecture: "CNN_3Block_Ablation"
+training:
+  epochs_run: 20
+  optimizer: "adam"
+  callbacks: [EarlyStopping(P5), ReduceLROnPlateau(P3)]
+regularization_flags:
+  data_augmentation: False
+  l2_weight_decay: True
+  dropout: True

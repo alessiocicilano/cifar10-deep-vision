@@ -1,0 +1,21 @@
+
+# R3: Parámetros del Experimento (CNN L2 + EarlyStop)
+run_id: 2025-11-16_1635_f8b9c0d
+seed: 42
+architecture:
+  type: "CNN_2Block_L2"
+  total_params: 545098
+training:
+  learning_rate: 0.001
+  batch_size: 64
+  epochs_requested: 30
+  epochs_run: 17
+  optimizer: "adam"
+regularization:
+  l2_weight_decay: 0.0001
+  early_stopping:
+    monitor: val_loss
+    patience: 5
+    restore_best_weights: true
+  dropout: 0.5
+  data_augmentation: false

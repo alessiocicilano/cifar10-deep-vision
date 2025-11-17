@@ -1,0 +1,11 @@
+{
+    "run_id": "2025-11-16_1457_e4a5f67",
+    "model_name": "cnn_2block",
+    "commit_hash": "e4a5f67",
+    "metrics": {
+        "val_accuracy": 0.703499972820282,
+        "val_loss": 0.8926424980163574,
+        "test_accuracy": 0.7027000188827515,
+        "test_loss": 0.9012730717658997
+    }
+}

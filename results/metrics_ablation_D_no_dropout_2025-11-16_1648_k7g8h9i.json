@@ -1,0 +1,12 @@
+{
+    "run_id": "2025-11-16_1648_k7g8h9i",
+    "model_name": "D_no_dropout",
+    "commit_hash": "k7g8h9i",
+    "metrics": {
+        "val_accuracy": 0.7770000100135803,
+        "val_loss": 0.815087080001831,
+        "test_accuracy": 0.7724000215530396,
+        "test_loss": 0.8250383734703064,
+        "epochs_run": 30
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "run_id": "2025-11-16_1504_c1d2e3f",
+    "model_name": "cnn_3b_sgd_cosine",
+    "commit_hash": "c1d2e3f",
+    "metrics": {
+        "val_accuracy": 0.7531999945640564,
+        "val_loss": 0.8683587908744812,
+        "test_accuracy": 0.7527999877929688,
+        "test_loss": 0.8795719742774963,
+        "epochs_run": 30
+    }
+}

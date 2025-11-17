@@ -1,0 +1,12 @@
+{
+    "run_id": "2025-11-16_1458_a1b2c3d",
+    "model_name": "cnn_full_regularized",
+    "commit_hash": "a1b2c3d",
+    "metrics": {
+        "val_accuracy": 0.6983000040054321,
+        "val_loss": 0.9602887630462646,
+        "test_accuracy": 0.7042999863624573,
+        "test_loss": 0.9594563245773315,
+        "epochs_run": 20
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "run_id": "2025-11-16_1453_ab12cd3",
+    "model_name": "MLP_Baseline",
+    "commit_hash": "ab12cd3",
+    "metrics": {
+        "val_accuracy": 0.3303000032901764,
+        "val_loss": 1.8820521831512451,
+        "test_accuracy": 0.32910001277923584,
+        "test_loss": 1.8785011768341064
+    }
+}

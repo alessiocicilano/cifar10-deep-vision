@@ -1,0 +1,12 @@
+{
+    "run_id": "2025-11-16_1635_f8b9c0d",
+    "model_name": "cnn_l2_earlystop",
+    "commit_hash": "f8b9c0d",
+    "metrics": {
+        "val_accuracy": 0.6901999711990356,
+        "val_loss": 0.9816522598266602,
+        "test_accuracy": 0.6881999969482422,
+        "test_loss": 0.9963098764419556,
+        "epochs_run": 17
+    }
+}

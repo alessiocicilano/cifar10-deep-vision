@@ -1,0 +1,31 @@
+
+# R3: Parámetros del Experimento (CNN 3-Block Deep)
+run_id: 2025-11-16_1638_d4e5f6a
+seed: 42
+architecture:
+  type: "CNN_3Block_Deep"
+  filters: [32, 64, 128]
+  dense_head: 128
+  total_params: 356810
+training:
+  learning_rate_initial: 0.001
+  batch_size: 64
+  epochs_requested: 30
+  epochs_run: 30
+  optimizer: "adam"
+regularization:
+  l2_weight_decay: 0.0001
+  dropout: 0.5
+  data_augmentation: true
+  callbacks:
+    - EarlyStopping: (monitor=val_loss, patience=5)
+    - ReduceLROnPlateau: (monitor=val_loss, patience=3, factor=0.2)
+
+
+# --- R3: Selección del Mejor Modelo ---
+best_model:
+  run_id: 2025-11-16_1638_d4e5f6a
+  commit: d4e5f6a
+  model_name: cnn_3block_deep
+  timestamp: 2025-11-16_1638
+  reason: "Best test_accuracy (0.7664) with high parameter efficiency (356k params)."

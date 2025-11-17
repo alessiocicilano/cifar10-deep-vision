@@ -1,0 +1,23 @@
+
+# R3: Parámetros del Experimento (CNN 2-Block)
+run_id: 2025-11-16_1635_e4a5f67
+seed: 42
+architecture:
+  type: "CNN_2Block_Base"
+  layers:
+    - Conv2D: 32 (3x3, relu, same)
+    - MaxPool2D: (2x2)
+    - Conv2D: 64 (3x3, relu, same)
+    - MaxPool2D: (2x2)
+    - Flatten: (4096,)
+    - Dense: 128 (relu)
+    - Dropout: 0.5
+    - Dense: 10 (softmax)
+  total_params: 545098
+training:
+  learning_rate: 0.001
+  batch_size: 64
+  epochs: 15
+  optimizer: "adam"
+regularization:
+  data_augmentation: false

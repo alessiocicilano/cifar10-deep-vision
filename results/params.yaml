@@ -1,0 +1,19 @@
+
+# R3: Parámetros del Experimento (Baseline MLP)
+run_id: 2025-11-16_1634_ab12cd3
+seed: 42
+architecture:
+  type: "MLP_Baseline"
+  layers:
+    - Flatten: (3072,)
+    - Dense: 256 (relu)
+    - Dropout: 0.5
+    - Dense: 10 (softmax)
+  total_params: 789258
+training:
+  learning_rate: 0.001
+  batch_size: 64
+  epochs: 10
+  optimizer: "adam"
+regularization:
+  data_augmentation: false

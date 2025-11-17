@@ -1,0 +1,10 @@
+{
+    "project": "IA_P3_CIFAR10",
+    "best_experiment": {
+        "run_id": "2025-11-16_1638_d4e5f6a",
+        "commit_hash": "d4e5f6a",
+        "model_name": "cnn_3block_deep",
+        "best_test_accuracy": 0.7663999795913696,
+        "best_test_loss": 0.7899649143218994
+    }
+}
